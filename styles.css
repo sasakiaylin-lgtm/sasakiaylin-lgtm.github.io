@@ -1,0 +1,44 @@
+body {
+background-color: #354230 ;
+}
+
+header {
+   
+    color: #E3DAC9;
+    font-style: initial;
+    font-family: sans-serif;
+    text-align:left ;
+    font-size: 50px;
+
+}
+h1{
+    color:#E3DAC9;
+    font-style: initial;
+    font-family: sans-serif;
+    text-align:left ;
+    font-size: 35px;
+
+}
+
+.navbar{
+    background-color: beige;
+    padding: 16px 32px;
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav-links a {
+  color: brown;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+
+
+nav
