@@ -2,18 +2,12 @@ body {
 background-color: #354230 ;
 }
 
-header {
-   
-    color: #E3DAC9;
-    font-style: initial;
-    font-family: sans-serif;
-    text-align:left ;
-    font-size: 50px;
 
-}
-h1{
+
+
+h1 {
     color:#E3DAC9;
-    font-style: initial;
+   
     font-family: sans-serif;
     text-align:left ;
     font-size: 35px;
@@ -37,8 +31,15 @@ h1{
   color: brown;
   text-decoration: none;
   font-family: sans-serif;
-}
+  text-decoration: none;
+  transition: all 0.4s;
+  }
+
+  a:hover {
+    letter-spacing: 4px;
+  }
 
 
 
-nav
+
+
