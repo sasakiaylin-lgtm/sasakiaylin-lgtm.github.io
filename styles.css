@@ -1,66 +1,128 @@
 body {
-  background-color: #354230;
+  background-color:#D3C399;
 }
-.navbar {
-  background-color: beige;
-  padding: 16px 32px;
 
+
+nav {
+  padding: 30px 50px;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  line-height: normal;
-
+  list-style: none;
+  padding: 5%;
+  margin: 0;
 }
 
 .nav-links a {
-  color: brown;
+  color: black;
   text-decoration: none;
   font-family: sans-serif;
-  text-decoration: none;
-  transition: all 0.4s;
+  font-size: 30px;
+  position: relative;
+  transition: letter-spacing 0.3s ease;
 }
 
-a:hover {
-  letter-spacing: 4px;
+
+.nav-links a:hover {
+  letter-spacing: 3px;
 }
 
-header h1 {
 
-  list-style: none;
-  display: flex;
-  gap: 24px;
-  line-height: normal;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+
+
+h1 {
+  animation: slideIn 0.7s ease-out;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+table {
+
+  width: 88%;
+  font-size: 30px;
+  border-collapse: separate;
+  border-spacing: 15px;
+
 
 }
 
 th,
 td {
-  border: 3px solid rgb(110, 10, 10);
-  background-color: #D4F6D4;
-  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
   padding: 15px;
-  
+
 }
 
-table { 
-  width: 100%;
+th {
+  background-color: #BED7F4;
+
 }
-.table-container {
-  flex-shrink: 1;
-  overflow-y: auto;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
+
+td {
+  background-color: beige;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+
+}
+@keyframes zoomInAnimation {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+img{
+ 
+
+width: 40%;
+height: 70%;
+
+  animation-name:zoomInAnimation ;
+  animation-duration:0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+
+  
+
+}
+
 
