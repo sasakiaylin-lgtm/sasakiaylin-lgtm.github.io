@@ -80,7 +80,6 @@ table {
   border-collapse: separate;
   border-spacing: 15px;
 
-
 }
 
 th,
@@ -117,4 +116,8 @@ td {
     opacity: 1;
   }
 }
-
+.intro-text{
+  display: flexbox;
+  justify-content: left;
+  size
+}
