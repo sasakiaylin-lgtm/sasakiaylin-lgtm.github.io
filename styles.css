@@ -2,7 +2,6 @@ body {
   background-color: #80b4d0;
 }
 
-
 nav {
   display: flex;
   justify-content: flex-end;
@@ -134,7 +133,72 @@ footer img {
 
 }
 
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 0px;
+}
 
+.hero-text {
+    position: relative;
+}
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 85px;
+    line-height: 0.9;
+    font-weight: 400;
+    letter-spacing: -3px;
+}
+
+h1:first-line {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+h1 span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.photo {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #e5e5e5;
+    filter: drop-shadow(2rem 2rem 20px #C3B1E1);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subtitle {
+    margin-top: 25px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #000;
+}
+.intro {
+    display: flex;
+    justify-content: right;
+    gap: 100x;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px 30px 80px;
+}
+
+.intro p {
+    width: 65%;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #000;
+}
 
 
 
