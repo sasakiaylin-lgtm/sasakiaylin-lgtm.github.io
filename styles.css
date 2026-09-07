@@ -64,7 +64,7 @@ th,
 td {
 
   padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
 
 
 }
@@ -128,27 +128,13 @@ tr+tr td+td {
   width: 100px;
 }
 
-.about-section {
-  min-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3cm;
- 
+.mypic img  {
+
+  width: 10cm;
 
 }
 
-.about-box, .hobbies-box {
-  width: 450px;
-  height: 450px;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 40px;
-  box-sizing: border-box;
- background-color: antiquewhite;
 
-
-}
 
 
 
