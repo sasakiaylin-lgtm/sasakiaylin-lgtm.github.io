@@ -1,5 +1,8 @@
 body {
-  background-color: #80b4d0;
+  margin: 0;
+  background: #ffffff;
+
+  
 }
 
 nav {
@@ -13,7 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding-top: 30px;
+  padding-top: 20px;
   margin: 0px;
 }
 
@@ -38,21 +41,12 @@ nav a.active {
 }
 
 
-
-
-
-
 .nav-links a:hover::after {
   width: 100%;
 }
 
 
-
-
-
-
 table {
-
 
   margin: 100px auto 0;
   border-collapse: collapse;
@@ -139,7 +133,7 @@ footer img {
     align-items: center;
     justify-content: center;
     gap: 45px;
-    padding: 0px;
+    padding-right: 40%;
 }
 
 .hero-text {
@@ -154,28 +148,14 @@ h1 {
 }
 
 h1:first-line {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
 }
 
 h1 span {
     font-family: Georgia, "Times New Roman", serif;
     font-weight: 400;
     letter-spacing: 3px;
-}
-.photo {
-    width: 400px;
-    height: 300px;
-    border-radius: 15px;
-    overflow: hidden;
-    background: #e5e5e5;
-    filter: drop-shadow(2rem 2rem 20px #C3B1E1);
-}
-
-.photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .subtitle {
@@ -187,10 +167,9 @@ h1 span {
 .intro {
     display: flex;
     justify-content: right;
-    gap: 100x;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 20px 30px 80px;
+    gap: 100px;
+    max-width: 100%;
+   
 }
 
 .intro p {
@@ -198,11 +177,101 @@ h1 span {
     font-size: 19px;
     line-height: 1.7;
     color: #000;
+    border: thick dotted rgb(167, 179, 255); padding: 20px; 
+          display: inline-block;
+    padding: 20px;
+    text-align: justify;
+      font-family: Georgia, "Times New Roman", serif;
 }
 
 
+:root {
+ 
+  --text-dark: #1a1a1a;
+  --text-body: #2b2b2b;
+}
 
+* {
+  box-sizing: border-box;
+}
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
 
+.slide {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 
+ 
+  padding: 48px 64px 56px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+}
 
+.slide h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0 0 40px 0;
+  letter-spacing: -0.5px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0 0 12px 0;
+}
+
+.card p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-body);
+  margin: 0;
+  padding: 0 12px;
+}
+
+@media (max-width: 900px) {
+  .slide {
+    aspect-ratio: auto;
+    padding: 32px 24px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .slide h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
