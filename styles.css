@@ -45,12 +45,7 @@ nav a.active {
 }
 
 
-table {
 
-  margin: 100px auto 0;
-  border-collapse: collapse;
-
-}
 
 th,
 td {
@@ -69,9 +64,12 @@ tr+tr td+td {
 
 
 .table {
+  margin: 100px auto 0;
+  border-collapse: collapse;
   display: flex;
   justify-content: center;
   text-align: center;
+  
 }
 
 .passed {

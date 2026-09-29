@@ -1,0 +1,209 @@
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: Garamond, serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-top: 40px;
+  margin: 0px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+
+nav a.active {
+  background-color: #000;
+  color: white;
+}
+
+.nav-links a:hover {
+  background-color: #e5e5e5;
+  transform: translateY(-2px);
+}
+
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 30%; /* Stay at the top */
+  left: 0;
+  background-color: #ffffff; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+#swot {
+text-align:center;
+ 
+  text-transform:uppercase;
+  font-size:26px; letter-spacing:1px;
+  
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 16px 0;
+  grid-gap: 22px;
+
+}
+
+#swot:after,#swot:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #ccc;
+
+}
+
+#smart:after,#smart:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #ccc;
+
+}
+#mission:after,#mission:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #ccc;
+
+}
+
+#smart{
+ text-align:center;
+ 
+  text-transform:uppercase;
+  font-size:26px; letter-spacing:1px;
+  
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 16px 0;
+  grid-gap: 22px;
+  padding-top: 100px;
+}
+#mission{
+text-align:center;
+ 
+  text-transform:uppercase;
+  font-size:26px; letter-spacing:1px;
+  
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 16px 0;
+  grid-gap: 22px;
+padding-top: 100px;
+
+}
+
+.MyMission  {
+ max-width: 650px;
+  margin: 30px auto;
+  padding: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.7;
+  border-bottom: 2px solid #222;
+}
+
+.swot-table {
+    margin: 28px auto 0;
+    border-collapse: separate;
+    border-spacing: 30px 20px;
+    text-align: center;
+      border-bottom: 2px solid #222;
+      
+
+}
+
+.swot-table th {
+    padding: 10px;
+    font-size: 24px;
+    border-bottom: 2px solid black;
+}
+
+.swot-table td {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.goals-table {
+    width: 80%;
+    margin: 28px auto 0;
+    border-collapse: separate;
+    border-spacing: 40px 20px;
+    text-align: left;
+    border-bottom: 2px solid #222;
+
+}
+
+.goals-table th {
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.goals-table td {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.goals-table p {
+    margin-bottom: 15px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 80px;
+  margin-top: 100px;
+  border-top: 1px solid #ddd;
+}
+
+footer img {
+  width: 100px;
+}
+
+.mypic img {
+
+  width: 10cm;
+
+}
