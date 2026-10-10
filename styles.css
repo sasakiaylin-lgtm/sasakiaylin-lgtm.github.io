@@ -15,7 +15,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding-top: 40px;
+  padding: 30px;
   margin: 0px;
 }
 
@@ -126,5 +126,40 @@ footer img {
   width: 10cm;
 
 }
+.jumbotron{
+   display: flex;
+  align-items: center;
+  background-color: yellow;
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color:black;
+  padding-left: 10%;
 
+}
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: black;
+   padding-left: 10%;
+}
 
+.text p{
+  display: flex;
+  width:80%;
+  flex-wrap:wrap;
+justify-content: center;
+padding-left: 10%;
+color: #000;
+}
+.rounded-circle {
+ float: left;
+  clip-path: circle(40%);
+  shape-outside: circle(45%);
+margin-left:15%;
+}
