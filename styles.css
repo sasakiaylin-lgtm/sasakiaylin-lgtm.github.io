@@ -168,273 +168,604 @@ footer img {
   margin-left: 15%;
 }
 
+
+/* Main content */
 .content-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: red;
-
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #ffffff;
 }
 
+/* Sections */
 .content-container section {
-  position: relative;
-  flex: 1;
-  background-color: aquamarine;
-  margin: 0 auto;
-  padding: 30px 40px;
-  max-width: 1000px;
-
+    position: relative;
+    flex: 1;
+    background-color: #faf9fd;
+    margin: 0 auto;
+    padding: 30px 40px;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e2deeb;
+    border-radius: 12px;
 }
 
-.skill-item h3 {
-  background-color: purple;
-  color: white;
-  display: inline-block;
-  padding: 5px;
-  margin-bottom: 0%;
-
-}
-
+/* Skill and interest headings */
+.skill-item h3,
 .interest-item h3 {
-  background-color: purple;
-  color: white;
-  display: inline-block;
-  padding: 5px;
-  margin-bottom: 0%;
+    background-color: #e8e1f8;
+    color: #292735;
+    display: inline-block;
+    padding: 6px 10px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-.interests-section h2 {
-  background-color: black;
-  color: white;
-  display: inline-block;
-  padding: 5px;
-  margin-left: 60px;
-
-}
-
+/* Main section headings */
+.interests-section h2,
 .skills-section h2 {
-  background-color: black;
-  color: white;
-  display: inline-block;
-  padding: 5px;
-  margin-left: 60px;
+    background-color: #62519a;
+    color: #ffffff;
+    display: inline-block;
+    padding: 8px 14px;
+    margin-left: 0;
+    border-radius: 6px;
 }
 
-.skill-item p {
-  background-color: lavender;
-  max-width: 500px;
-  padding: 5px;
-  margin-top: 0%;
-
-}
-
+/* Skill and interest descriptions */
+.skill-item p,
 .interest-item p {
-  background-color: lavender;
-  max-width: 500px;
-  padding: 5px;
-  margin-top: 0%;
+    background-color: #f4f0fc;
+    color: #403b4b;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 0 0 6px 6px;
+    line-height: 1.6;
 }
 
-.skills-list {
-  background-color: lightblue;
-  list-style-type: none;
-  padding-left: 10%;
-  display: grid;
-  grid-template-columns: 40% 40%;
-  /* Two equal-width columns */
-
-
-}
-
+/* Skills list */
+.skills-list,
 .interests-list {
-  background-color: greenyellow;
-  list-style-type: none;
-  padding-left: 10%;
-  display: grid;
-  grid-template-columns: 40% 40%;
-  /* Two equal-width columns */
-
-
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin: 20px 0 0;
 }
 
+/* About section */
 .about-section {
-  background-color: aqua;
-  flex: 1;
-  padding-right: 20%;
-  padding-left: 20px;
-
-
-
+    background-color: #f4f0fc;
+    flex: 1;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
+/* Profile section */
 .profile-section {
-  background-color: sandybrown;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-left: 20%;
-
-
-
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
 }
 
+/* Profile and introduction layout */
 .intro-container {
-  display: flex;
-
-  align-items: flex-end;
-  padding-bottom: 50px;
-  background-color: red;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
 }
 
+/* Profile image */
 .profile-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  padding-top: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e8e1f8;
+    padding: 0;
 }
 
+/* Biography */
 .bio-text {
-  text-align: justify;
+    text-align: justify;
+    line-height: 1.7;
+    color: #403b4b;
 }
 
+/* Profile list */
 .profile-list {
-  line-height: 1.6;
-  text-align: left;
-  list-style-type: none;
+    line-height: 1.8;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
 }
 
+/* Frame */
 .frame {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 40px;
-  background-color: black;
-  color: white;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    background-color: #faf9fd;
+    color: #292735;
+    border: 1px solid #e2deeb;
+    border-radius: 12px;
 }
 
+/* Frame title */
 .frame h1 {
-  margin: 30px 0;
-  font-size: 44px;
-  font-weight: 700;
-
-  line-height: 1;
+    margin: 30px 0;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
+/* Frame list */
 .frame ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .frame li {
-  border-bottom: 1px solid var(--line);
-
+    border-bottom: 1px solid #e2deeb;
 }
 
+/* Frame rows */
 .frame .row {
-  display: grid;
-  grid-template-columns: 150px 1fr auto;
-  align-items: center;
-  gap: 20px;
-  padding: 28px 0;
-  color: inherit;
-  text-decoration: none;
-
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 0;
+    color: inherit;
+    text-decoration: none;
 }
 
+/* Dates */
 .frame time {
-  font-size: 14px;
-  color: gray;
-
+    font-size: 14px;
+    color: #777181;
 }
 
+/* Row titles */
 .frame .title {
-  font-size: 26px;
-  font-weight: 800;
-  line-height: 1.2;
-
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
 }
 
+/* More text */
 .frame .more {
-  font-size: 14px;
+    font-size: 14px;
+    color: #62519a;
 }
 
+/* Hover effect */
 .frame .row:hover .title {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
-.swot-table,
-.goals-table {
-    margin: 28px auto 0;
-    border-collapse: separate;
-    background-color: coral;
+/* Main article */
+.goals-article {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.7;
+    color: #292735;
+}
+
+/* Section headings */
+.goals-article h2 {
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.goals-article h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Mission section */
+.mission-section {
+    padding: 30px;
+    margin-bottom: 35px;
+    background-color: #f4f0fc;
+    border-left: 5px solid #9b8ae6;
+    border-radius: 12px;
+}
+
+.mission-section p {
+    max-width: 850px;
+    margin-bottom: 0;
+}
+
+/* SWOT section */
+.swot-section {
+    margin-bottom: 40px;
 }
 
 .swot-table {
-    border-spacing: 30px 20px;
-    text-align: center;
-    background-color: magenta;
-}
-
-.goals-table {
-    width: 80%;
-    border-spacing: 40px 20px;
-    border-bottom: 2px solid #222;
-    background-color: violet;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 12px;
+    table-layout: fixed;
 }
 
 .swot-table th,
-.goals-table th {
-    padding: 10px;
-    font-size: 24px;
-    text-align: center;
-background-color: aqua;
+.swot-table td {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-radius: 8px;
 }
 
 .swot-table th {
-    background-color: blue;
+    background-color: #e8e1f8;
+    font-size: 1.1rem;
 }
 
 .swot-table td {
-    padding: 10px;
-    font-size: 20px;
+    background-color: #faf9fd;
+    border: 1px solid #e2deeb;
+}
+
+.swot-table ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.swot-table li {
+    margin-bottom: 8px;
+}
+
+/* SMART goals */
+.smart-goals-section {
+    margin-bottom: 40px;
+}
+
+.smart-goals-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    align-items: start;
+}
+
+.smart-goal {
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e2deeb;
+    border-top: 5px solid #9b8ae6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(40, 30, 70, 0.06);
+}
+
+.smart-goal:nth-child(2) {
+    border-top-color: #83b9a0;
+}
+
+.goal-description {
+    color: #5e5a69;
+    margin-bottom: 20px;
+}
+
+.smart-criteria p {
+    padding-bottom: 12px;
+    margin: 0 0 12px;
+    border-bottom: 1px solid #eeeaf4;
+}
+
+.smart-criteria p:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.smart-criteria strong {
+    color: #62519a;
+}
+
+
+
+
+.ict-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.7;
+    background-color:pink ;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #9b8ae6;
+}
+
+.golden-circle {
+    margin-bottom: 20px;
     background-color: green;
 }
 
-.goals-table td {
-    padding: 10px;
-    font-size: 18px;
-    line-height: 1.5;
-    vertical-align: top;
-    background-color: yellow;
+.golden-circle  h2,
+.story-section  h2 {
+    margin-bottom: 20px;
+    background-color: brown;
 }
 
-.goals-table p {
-    margin-bottom: 15px;
-    background-color: white;
+.circle-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+    background-color: darkblue;
 }
-.goals-section h2{
-background-color: pink;
+
+.circle-card {
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #faf9fd;
 }
-.my-mission h2{
-  background-color: greenyellow;
-  
+
+.circle-card h3 {
+    margin-top: 0;
+    text-align: center;
+    background-color: darkkhaki;
 }
-.my-mission {
-    max-width: 650px;
-    margin: 30px auto;
-    padding-bottom: 20px;
-    font-size: 18px;
+
+.why-card {
+    border-top: 4px solid red;
+}
+
+.how-card {
+    border-top: 4px solid red;
+}
+
+.what-card {
+    border-top: 4px solid red;
+}
+
+.motivation-list {
+    padding-left: 20px;
+    background-color: greenyellow;
+}
+
+.motivation-list li {
+    margin-top: 16px;
+    background-color: indigo;
+}
+
+.motivation-list li p {
+    margin: 4px 0 0;
+    background-color: lime;
+}
+
+.career-title {
+    margin-top: 20px;
+    background-color: khaki;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: goldenrod;
+}
+
+.story-content p {
+    margin-bottom: 20px;
+    background-color: mediumseagreen;
+}
+
+.direction-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
     line-height: 1.7;
-    background-color: darkgoldenrod;
 }
-.swot-section h2{
-  background-color: orangered;
-  
+
+.direction-header {
+    text-align: center;
+    margin-bottom: 40px;
 }
+
+.specialisation-section,
+.future-section {
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #f7f5fc;
+}
+
+.specialisation-section {
+    border-left: 4px solid #9b8ae6;
+}
+
+.future-section {
+    border-left: 4px solid #83b9a0;
+}
+
+.specialisation-section h3 {
+    margin-top: 15px;
+}
+
+.specialisation-section p,
+.future-section p {
+    margin-bottom: 0;
+}
+
+
+.programming-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+.programming-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.programming-header h1 {
+    margin-bottom: 10px;
+}
+
+.experience-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.experience-intro,
+.skills-card,
+.learning-card,
+.goal-section {
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #dedbe8;
+}
+
+.experience-intro {
+    background-color: #ffffff;
+}
+
+.skills-card {
+    background-color: #f4f0fc;
+    border-top: 4px solid #9b8ae6;
+}
+
+.skills-card ul {
+    padding-left: 20px;
+}
+
+.skills-card li {
+    margin-bottom: 12px;
+}
+
+.learning-section {
+    margin-bottom: 40px;
+}
+
+.learning-section h2 {
+    margin-bottom: 20px;
+}
+
+.learning-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.learning-card {
+    background-color: #ffffff;
+    border-top: 4px solid #8cadd8;
+}
+
+.learning-card h3 {
+    margin-top: 0;
+}
+
+.goal-section {
+    background-color: #eef7f1;
+    border-left: 4px solid #83b9a0;
+}
+
+.goal-section h2 {
+    margin-top: 0;
+}
+
+
+.ict-work-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+.ict-work-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ict-introduction,
+.ict-skills,
+.ict-future {
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    border: 1px solid #dedbe8;
+}
+
+.ict-introduction {
+    background-color: #f4f0fc;
+    border-left: 4px solid #9b8ae6;
+}
+
+.ict-careers {
+    margin-bottom: 35px;
+}
+
+.ict-careers h2 {
+    margin-bottom: 20px;
+}
+
+.career-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.career-card {
+    padding: 22px;
+    border: 1px solid #dedbe8;
+    border-top: 4px solid #8cadd8;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.career-card h3 {
+    margin-top: 0;
+}
+
+.ict-skills {
+    background-color: #ffffff;
+}
+
+.ict-skills li {
+    margin-bottom: 10px;
+}
+
+.ict-future {
+    background-color: #eef7f1;
+    border-left: 4px solid #83b9a0;
+}
+
+.ict-future h2 {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
