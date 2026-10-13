@@ -47,126 +47,160 @@ nav a.active {
 
 
 
-th,
-td {
 
-  padding: 10px;
-  font-size: 20px;
-
-
+.study-progress {
+    margin: 40px 0;
+    color: #222;
 }
 
-tr+tr td+td {
-  border-top: 1px solid black;
+.section-heading {
+    margin-bottom: 24px;
 }
 
+.section-heading h2 {
+    margin: 0 0 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
 
-
+.section-heading p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+}
 
 .table {
-  margin: 100px auto 0;
-  border-collapse: collapse;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
 
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.table th,
+.table td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.table th {
+    background: #f7f6fa;
+    color: #555;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.table td:first-child {
+    color: #777;
+    font-weight: 600;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Separate each quartile visually */
+.table tbody tr:nth-child(3n + 1):not(:first-child) td {
+    border-top: 2px solid #ded9e9;
 }
 
 .passed {
-  color: green;
-  font-weight: bold;
+    color: green;
+    font-weight: 600;
 }
 
 .failed {
-  color: red;
-  font-weight: bold;
+    color: red;
+    font-weight: 600;
 }
 
+/* EC progress */
 .ec-progress {
-  width: 600px;
-  margin: 50px auto;
+    margin-top: 24px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
 }
 
 .ec-text {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.ec-text span:last-child {
+    font-weight: 600;
 }
 
 .ec-bar {
-  width: 100%;
-  height: 20px;
-  background-color: #fdfefc;
-  border-radius: 10px;
-  overflow: hidden;
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    background: #eeeaf4;
+    border-radius: 20px;
 }
 
 .ec-fill {
-  width: 80%;
-  height: 100%;
-  background-color: #05040a;
-  border-radius: 10px;
+    width: 75%;
+    height: 100%;
+    background: #8063b5;
+    border-radius: inherit;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 80px;
-  margin-top: 100px;
-  border-top: 1px solid #ddd;
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 24px 5%;
+    border-top: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: Arial, sans-serif;
 }
 
-footer img {
-  width: 100px;
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.mypic img {
-
-  width: 10cm;
-
+.hz-logo {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
 }
 
-.jumbotron {
-  display: flex;
-  align-items: center;
-  background-color: yellow;
-  background-size: cover;
-  color: #ffffff;
-  height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #222222;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
 }
 
-.jumbotron h2 {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-  color: black;
-  padding-left: 10%;
-
+.github-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
-.jumbotron h3 {
-  margin: 0 0 20px;
-  color: black;
-  padding-left: 10%;
-}
 
-.text p {
-  display: flex;
-  width: 80%;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 10%;
-  color: #000;
-}
 
-.rounded-circle {
-  float: left;
-  clip-path: circle(40%);
-  shape-outside: circle(45%);
-  margin-left: 15%;
-}
 
 
 /* Main content */
@@ -283,13 +317,6 @@ footer img {
     color: #403b4b;
 }
 
-/* Profile list */
-.profile-list {
-    line-height: 1.8;
-    text-align: left;
-    list-style-type: none;
-    padding-left: 0;
-}
 
 /* Frame */
 .frame {
@@ -385,13 +412,14 @@ footer img {
     padding: 30px;
     margin-bottom: 35px;
     background-color: #f4f0fc;
-    border-left: 5px solid #9b8ae6;
     border-radius: 12px;
+    
 }
 
 .mission-section p {
     max-width: 850px;
     margin-bottom: 0;
+   
 }
 
 /* SWOT section */
@@ -441,44 +469,26 @@ footer img {
 
 .smart-goals-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 25px;
     align-items: start;
 }
 
 .smart-goal {
     padding: 25px;
-    background-color: #ffffff;
+   background-color: #faf9fd;
     border: 1px solid #e2deeb;
-    border-top: 5px solid #9b8ae6;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(40, 30, 70, 0.06);
 }
 
-.smart-goal:nth-child(2) {
-    border-top-color: #83b9a0;
-}
 
 .goal-description {
-    color: #5e5a69;
+    color:black;
     margin-bottom: 20px;
+
 }
 
-.smart-criteria p {
-    padding-bottom: 12px;
-    margin: 0 0 12px;
-    border-bottom: 1px solid #eeeaf4;
-}
-
-.smart-criteria p:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.smart-criteria strong {
-    color: #62519a;
-}
 
 
 
@@ -488,24 +498,24 @@ footer img {
     margin: 40px auto;
     padding: 20px;
     line-height: 1.7;
-    background-color:pink ;
+    
 }
 
 .page-header {
     text-align: center;
     margin-bottom: 40px;
-    background-color: #9b8ae6;
+  
 }
 
 .golden-circle {
     margin-bottom: 20px;
-    background-color: green;
+    
 }
 
 .golden-circle  h2,
 .story-section  h2 {
     margin-bottom: 20px;
-    background-color: brown;
+  
 }
 
 .circle-container {
@@ -513,7 +523,7 @@ footer img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     align-items: stretch;
-    background-color: darkblue;
+   
 }
 
 .circle-card {
@@ -526,50 +536,27 @@ footer img {
 .circle-card h3 {
     margin-top: 0;
     text-align: center;
-    background-color: darkkhaki;
+
 }
 
-.why-card {
-    border-top: 4px solid red;
-}
 
-.how-card {
-    border-top: 4px solid red;
-}
 
-.what-card {
-    border-top: 4px solid red;
-}
 
-.motivation-list {
-    padding-left: 20px;
-    background-color: greenyellow;
-}
 
-.motivation-list li {
-    margin-top: 16px;
-    background-color: indigo;
-}
 
-.motivation-list li p {
-    margin: 4px 0 0;
-    background-color: lime;
-}
-
-.career-title {
-    margin-top: 20px;
-    background-color: khaki;
-}
 
 .story-content {
     max-width: 800px;
     margin: 0 auto;
-    background-color: goldenrod;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #faf9fd;
 }
 
 .story-content p {
     margin-bottom: 20px;
-    background-color: mediumseagreen;
+    
 }
 
 .direction-section {
@@ -592,13 +579,8 @@ footer img {
     background-color: #f7f5fc;
 }
 
-.specialisation-section {
-    border-left: 4px solid #9b8ae6;
-}
 
-.future-section {
-    border-left: 4px solid #83b9a0;
-}
+
 
 .specialisation-section h3 {
     margin-top: 15px;

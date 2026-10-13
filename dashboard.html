@@ -7,6 +7,10 @@
      <title>My Personal Portfolio</title>
     <meta charset="UTF-8">
     <link href="styles.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
 </head>
 
 <body>
@@ -28,125 +32,157 @@
     </header>
 
 
+   
+<section class="study-progress">
+    <div class="section-heading">
+        <h2>My Study Progress</h2>
+        <p>Year 1 · HBO-ICT</p>
+    </div>
+
     <div class="table">
-
         <table>
+            <thead>
+                <tr>
+                    <th>Quartile</th>
+                    <th>Course</th>
+                    <th>Assessment</th>
+                    <th>EC</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
 
-            <tr>
-                <th>Quartile</th>
-                <th>Course</th>
-                <th>Exam</th>
-                <th>Credits</th>
-                <th>Grade</th>
-            </tr>
-            <tr>
-                <td rowspan="3">1</td>
-                <td>Programming and career orientation </td>
+            <tbody>
+                <!-- Quartile 1 -->
+                <tr>
+                    <td rowspan="3">01</td>
+                    <td>Programming and Career Orientation</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="passed">5.5</td>
+                </tr>
+                <tr>
+                    <td>Programming Basics</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="passed">5.5</td>
+                </tr>
+                <tr>
+                    <td>Computer Science Basics</td>
+                    <td>Written Knowledge Test</td>
+                    <td>5</td>
+                    <td class="failed">5.0</td>
+                </tr>
 
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="passed">5.5</td>
-            </tr>
-            <tr>
-                <td>Programming basics</td>
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="passed">5.5</td>
-            </tr>
-            <tr>
-                <td>Computer science basics</td>
-                <td>Written Knowledge Test</td>
-                <td>5</td>
-                <td class="failed">5</td>
-            </tr>
-            <tr>
-                <td rowspan="3">2</td>
-                <td>Object Oriented Programming </td>
+                <!-- Quartile 2 -->
+                <tr>
+                    <td rowspan="3">02</td>
+                    <td>Object-Oriented Programming</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="passed">5.5</td>
+                </tr>
+                <tr>
+                    <td>Agile and Team Management</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="failed">3.0</td>
+                </tr>
+                <tr>
+                    <td>Project: Foundations</td>
+                    <td>Portfolio</td>
+                    <td>5</td>
+                    <td class="passed">5.5</td>
+                </tr>
 
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="passed">5.5</td>
-            </tr>
-            <tr>
-                <td>Agile and Team Management</td>
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="failed">3</td>
+                <!-- Quartile 3 -->
+                <tr>
+                    <td rowspan="3">03</td>
+                    <td>Software Engineering Basics</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="passed">5.5</td>
+                </tr>
+                <tr>
+                    <td>Foundations of Data</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="failed">5.0</td>
+                </tr>
+                <tr>
+                    <td>Requirements Modelling</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="passed">7.0</td>
+                </tr>
 
-            </tr>
-            <tr>
-                <td> Project: Foundations</td>
-                <td>Portfolio </td>
-                <td>5</td>
-                <td class="passed">5.5</td>
-
-            </tr>
-            <tr>
-                <td rowspan="3">3</td>
-                <td>Software Engineering Basics </td>
-
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="passed">5.5</td>
-            </tr>
-            </tr>
-            <tr>
-                <td> Foundations of Data</td>
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="failed">5</td>
-
-            </tr>
-            </tr>
-            <tr>
-                <td> Requirements Modelling</td>
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="passed">7</td>
-
-            </tr>
-            <tr>
-                <td rowspan="3">4</td>
-                <td>Web Application Development </td>
-
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="passed">5.5</td>
-            </tr>
-            <tr>
-                <td> Data Science Basics</td>
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="failed">5</td>
-
-            </tr>
-            <tr>
-                <td>Project: Applied Client Solutions</td>
-                <td>Assignment</td>
-                <td>5</td>
-                <td class="passed">5.5</td>
-
-            </tr>
+                <!-- Quartile 4 -->
+                <tr>
+                    <td rowspan="3">04</td>
+                    <td>Web Application Development</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="passed">5.5</td>
+                </tr>
+                <tr>
+                    <td>Data Science Basics</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="failed">5.0</td>
+                </tr>
+                <tr>
+                    <td>Project: Applied Client Solutions</td>
+                    <td>Assignment</td>
+                    <td>5</td>
+                    <td class="passed">5.5</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
     <div class="ec-progress">
-  <div class="ec-text">
-   
-    <span>45/ 60 EC</span>
-  </div>
+        <div class="ec-text">
+            <span>Study progress</span>
+            <span>45 / 60 EC</span>
+        </div>
 
-  <div class="ec-bar">
-    <div class="ec-fill"></div>
-  </div>
-</div>
+        <div
+            class="ec-bar"
+            role="progressbar"
+            aria-label="Study progress"
+            aria-valuenow="45"
+            aria-valuemin="0"
+            aria-valuemax="60"
+        >
+            <div class="ec-fill"></div>
+        </div>
+    </div>
+</section>
 
 
 
-<footer>
-  <img src="hz-logo.png" alt="HZ logo">
 
- </footer>
+
+<footer class="site-footer">
+    <div class="footer-left">
+        <img src="img/hz-logo.png" alt="HZ logo" class="hz-logo">
+
+        
+    </div>
+
+    <a
+        href="https://github.com/sasakiaylin-lgtm"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="github-link"
+    >
+        <img src="img/github.png" alt="" class="github-icon">
+        <span>GitHub</span>
+    </a>
+
+
+</footer>
+
+
 
 </body>
 </html>
