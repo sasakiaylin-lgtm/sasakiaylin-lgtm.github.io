@@ -96,18 +96,8 @@ nav a.active {
     white-space: nowrap;
 }
 
-.table td:first-child {
-    color: #777;
-    font-weight: 600;
-}
 
-.table tbody tr:last-child td {
-    border-bottom: none;
-}
 
-.table tbody tr:nth-child(3n + 1):not(:first-child) td {
-    border-top: 2px solid #ded9e9;
-}
 
 .passed {
     color: green;
