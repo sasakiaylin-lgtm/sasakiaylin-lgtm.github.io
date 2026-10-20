@@ -524,40 +524,66 @@ nav a.active {
     margin-bottom: 20px;
 
 }
-
-.why-ict {
-   max-width: 900px;
-    margin: 20px auto;
+.why-ict-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
     line-height: 1.7;
 }
-
-.motivation-header {
-    text-align: center;
-    margin-bottom: 40px;
+.golden-circle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 
-.motivation-header h2 {
-    font-size: 2.5rem;
+
+
+.golden-circle-item h2 {
     margin-bottom: 10px;
 }
 
-.motivation-header p {
-    color: #666;
+.golden-circle-item p {
+    color: #555;
     font-size: 1.1rem;
 }
 
-.why-ict-section {
-    margin-bottom: 40px;
+/* Motivation */
+.motivation-section {
+    max-width: 650px;
+    margin: 60px auto;
+    text-align: center;
 }
 
-.why-ict-section h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+.motivation-text p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-.why-ict-section p {
-    margin-bottom: 15px;
+
+ .motivation-section {
+    margin-top: 60px;
+    padding-top: 35px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.motivation-section h2 {
+    margin: 0 0 25px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.motivation-text {
+    max-width: 800px;
+}
+
+.motivation-text p {
+    margin: 0 0 22px;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.9;
 }
 
 .direction-section {
